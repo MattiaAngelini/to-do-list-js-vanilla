@@ -33,10 +33,10 @@ function addItem(){
     //per ogni <li> creo un tasto completato ed uno elimina
     const btnDelete = document.createElement('button')
     btnDelete.innerHTML = 'ELIMINA'
-    btnDelete.classList = 'btnDelete' + userToDo.id
+    btnDelete.classList.add('btnDelete' + userToDo.id, 'btn-danger', 'btn','m-1')
     const btnDone = document.createElement('button')
     btnDone.innerHTML = 'COMPLETATO'
-    btnDone.classList = 'btnDone' + userToDo.id
+    btnDone.classList.add('btnDone' + userToDo.id, 'btn-success', 'btn','m-1')
 
     //pusho oggetto in array con scelte utente
     userList.push(userToDo) 
